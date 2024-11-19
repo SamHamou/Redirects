@@ -8,7 +8,7 @@ languageCode = "en-us"
 paginate = "6"
 # post excerpt
 summaryLength = "20"
-
+disableAliases = true
 # google analytics
 googleAnalytics = "" # example : UA-123-45
 
@@ -19,7 +19,7 @@ googleAnalytics = "" # example : UA-123-45
 [markup.goldmark.renderer]
 unsafe = true
 
-disableAliases = true
+
 
 [taxonomies]
 category = "category"
