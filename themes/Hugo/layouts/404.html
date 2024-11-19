@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    <style>
+      /* Variables */
+      :root {
+         --font: 'Open Sans', sans-serif;
+         --bg: #fff;
+         --white: #fff;
+         --text_color: #4B4F4B;
+         --button: #2281d3;
+         --hover: #45EA31;
+         --selection: transparent;
+      }
+
+      * {
+         margin: 0;
+         padding: 0;
+         font-family: var(--font);
+         text-align: center;
+         text-decoration: none;
+         outline: none;
+         border: none;
+         box-sizing: border-box;
+      }
+
+      ::selection {
+         background: var(--selection);
+      }
+
+      img {
+         max-width: 100%;
+         user-select: none;
+      }
+
+      html, body {
+         height: 100%;
+      }
+
+      body {
+         background: var(--bg);
+      }
+
+      .wrapper {
+         position: relative;
+         padding: 20px;
+      }
+
+      .wrapper .oops {
+         color: var(--text_color);
+         font-size: 8em;
+         letter-spacing: 0.05em;
+         margin-top: 30px;
+      }
+
+      .wrapper .info {
+         color: var(--text_color);
+         padding: 5px;
+      }
+
+      .wrapper .button {
+         background: var(--button);
+         color: var(--white);
+         text-transform: uppercase;
+         padding: 10px 40px;
+         border-radius: 50px;
+         transition: 150ms;
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .wrapper .button:hover {
+         background: var(--hover);
+         transition: 150ms;
+      }
+
+      .wrapper .button svg {
+         width: 1.2em;
+         height: 1.2em;
+         margin-right: 15px;
+         fill: var(--white);
+      }
+
+      .wrapper img {
+         padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="all">
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="wrapper">
+                   <h1 class="oops">Oops!!</h1>
+                   <p class="info">You're not supposed to be here!.</p>
+                   <br />
+                   <a href="/" class="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                         <path d="M15 19l-7-7 7-7"/>
+                      </svg>
+                      Go Back
+                   </a>
+                </div>
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+
+    </div>
+  </body>
+</html>

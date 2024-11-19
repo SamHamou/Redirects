@@ -1,0 +1,72 @@
+######################## default configuration
+baseURL = "/"
+title = "Redirects Avenues"
+theme = "Hugo"
+languageName = "En"
+languageCode = "en-us"
+# post pagination
+paginate = "6"
+# post excerpt
+summaryLength = "20"
+
+# google analytics
+googleAnalytics = "" # example : UA-123-45
+
+
+############################## Output 
+
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+disableAliases = true
+
+[taxonomies]
+category = "category"
+author = "author"
+
+[permalinks]
+  posts  = "/:slug/"
+  pages = "/:slug/"
+  category = "/:title/"
+
+############################## navigation 
+
+# main menu
+[[menu.main]]
+name = "Home"
+URL = "/"
+weight = 1
+
+[[menu.main]]
+name = "Privacy Policy"
+URL = "/privacy-policy"
+weight = 3
+
+[[menu.main]]
+name = "Terms & Conditions"
+URL = "/terms-and-conditions"
+weight = 4
+
+
+
+
+#################### default parameters 
+[params]
+# Meta data
+description = "This is the meta description for the site"
+author = "Sam"
+
+# favicon
+[params.favicon]
+favicon = "images/favicon.png"
+
+# footer
+[params.footer]
+copyright = "Copyright &copy; 2024"
+
+
+[sitemap]
+    changefreq = "weekly"
+    priority = 0.9
+	filename = "map.xml"
